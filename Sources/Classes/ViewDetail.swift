@@ -7,7 +7,7 @@
 
 import Foundation
 import iPass2_0NativeiOS
-public static class MainDataBase: iPassSDKManagerDelegate{
+public static class MainDataBase{
     
     func getScanCompletionResult(result: String, error: String) {
             print(Date())
