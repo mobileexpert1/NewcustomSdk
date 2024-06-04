@@ -21,6 +21,11 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "NewcustomSdk",
+            dependencies: [
+             .product(name: "iPass2.0NativeiOS", package: "iPass2.0NativeiOS")
+         ],
+
+             path: "Sources",
             resources: [
                 .process("Sources/Classes/ViewDetail.swift"),
                 .process("Sources/Classes/dataFile.swift"),
