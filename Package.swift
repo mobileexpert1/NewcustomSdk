@@ -23,6 +23,7 @@ let package = Package(
             name: "NewcustomSdk",
             resources: [
                 .process("Sources/Classes/ViewDetail.swift"),
+                .process("Sources/Classes/dataFile.swift"),
                 ]),
         .testTarget(
             name: "NewcustomSdkTests",

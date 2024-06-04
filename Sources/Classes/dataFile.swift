@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import iPass2_0NativeiOS
+import iPass2.0NativeiOS
 
 public class MainDataBase{
     
