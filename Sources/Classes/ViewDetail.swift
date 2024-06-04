@@ -7,9 +7,14 @@
 
 import Foundation
 import iPass2_0NativeiOS
+import NewcustomSdk
+import Foundation
+import DocumentReader
+import Amplify
+import AWSCognitoAuthPlugin
 public static class MainDataBase{
     
-    func getScanCompletionResult(result: String, error: String) {
+      func getScanCompletionResult(result: String, error: String) {
             print(Date())
             print("data fetched success")
             print("Result-->", result)
@@ -17,13 +22,13 @@ public static class MainDataBase{
             
         }
     }
-    DataBaseDownloading.initialization(completion:{
+  DataBaseDownloading.initialization(completion:{
         progres, status, error in
         print(progres,status, error)
         
         
     })
-func startScanningProcess() {
+public static func startScanningProcess() {
     iPassSDKManger.delegate = self
     iPassSDKManger.startScanningProcess(userEmail: "", flowId: 10015, socialMediaEmail :"appsdev096@gmail.com", phoneNumber : "+919781986132", controller: self, userToken: "self.userToken", appToken: "self.appToken1")
 }
