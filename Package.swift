@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
 
-       .package(url: "https://github.com/yazanalqasem/iPass2.0NativeiOS.git", from: "1.0.0")
+        .package(url: "https://github.com/yazanalqasem/iPass2.0NativeiOS.git", from: "1.0.0")
        
     ],
     targets: [
